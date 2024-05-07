@@ -23,7 +23,6 @@ class JobsModule extends FetchFactory<IJobs[]> {
    * @returns 
    */
   async getJobs(
-    asyncDataOptions?: AsyncDataOptions<IJobs[]>
   ) {
     return useAsyncData(
       () => {
@@ -38,7 +37,6 @@ class JobsModule extends FetchFactory<IJobs[]> {
           fetchOptions
         )
       },
-      asyncDataOptions
     ) 
   }
 }
