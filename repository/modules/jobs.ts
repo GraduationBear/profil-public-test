@@ -28,7 +28,8 @@ class JobsModule extends FetchFactory<IJobs[]> {
       () => {
         const fetchOptions: FetchOptions<'json'> = {
           headers: {
-            'Content-Type': 'application/json'}
+            'Content-Type': 'application/json'
+          }
         };
         return this.call(
           'GET',
@@ -37,7 +38,7 @@ class JobsModule extends FetchFactory<IJobs[]> {
           fetchOptions
         )
       },
-    ) 
+    )
   }
 }
 
