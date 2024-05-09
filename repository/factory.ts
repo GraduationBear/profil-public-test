@@ -28,11 +28,11 @@ class FetchFactory<T> {
     fetchOptions?: FetchOptions<'json'>
   ): Promise<T> {
     return this.$fetch<T>(
-      url, 
-      { 
-        method, 
-        body: data, 
-        ...fetchOptions 
+      url,
+      {
+        method,
+        body: data,
+        ...fetchOptions
       }
     )
   }
